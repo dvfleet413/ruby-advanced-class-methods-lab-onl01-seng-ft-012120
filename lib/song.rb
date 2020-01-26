@@ -44,8 +44,8 @@ class Song
   def self.new_from_filename(filename)
     data = filename.split("-")
     title_with_file_type = data[1].split(".")
-    title = title_with_file_type[0].chomp
-    artist_name = data[0].chomp
+    title = title_with_file_type[0].strip
+    artist_name = data[0].strip
     binding.pry
   end 
 end
