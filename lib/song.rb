@@ -42,7 +42,7 @@ class Song
 #    names.sort!
 #    names.collect {|song| self.find_by_name(song)}
 
-    
+    self.all.sort_by()
   end 
     
 end
