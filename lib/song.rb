@@ -46,7 +46,6 @@ class Song
     title_with_file_type = data[1].split(".")
     title = title_with_file_type[0].strip
     artist_name = data[0].strip
-    binding.pry
     
     song = self.new
     song.name = title
