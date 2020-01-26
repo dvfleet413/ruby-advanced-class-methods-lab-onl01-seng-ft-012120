@@ -39,6 +39,8 @@ class Song
   
   def self.alphabetical
     binding.pry
+    names = self.all.collect{|song| song.name}
+    names.sort!
     
   end 
     
