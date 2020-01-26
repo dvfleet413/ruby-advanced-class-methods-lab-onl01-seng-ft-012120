@@ -47,5 +47,10 @@ class Song
     title = title_with_file_type[0].strip
     artist_name = data[0].strip
     binding.pry
+    
+    song = self.new
+    song.name = title
+    song.artist_name = artist_name
+    song.save
   end 
 end
