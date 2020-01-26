@@ -38,10 +38,9 @@ class Song
   end 
   
   def self.alphabetical
-    binding.pry
     names = self.all.collect{|song| song.name}
     names.sort!
-    
+    names.collect {|song| self.find_by_name(song)}
   end 
     
 end
