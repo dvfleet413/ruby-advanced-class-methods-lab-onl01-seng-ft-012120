@@ -47,4 +47,5 @@ class Song
     title = title_with_file_type[0].chomp
     artist_name = data[0].chomp
     binding.pry
+  end 
 end
