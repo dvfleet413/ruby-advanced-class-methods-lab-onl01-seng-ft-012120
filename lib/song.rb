@@ -38,11 +38,13 @@ class Song
   end 
   
   def self.alphabetical
-#    names = self.all.collect{|song| song.name}
-#    names.sort!
-#    names.collect {|song| self.find_by_name(song)}
-
     self.all.sort_by{|song| song.name}
   end 
-    
+  
+  def self.new_from_filename(filename)
+    data = filename.split("-")
+    title_with_file_type = data[1].split(".")
+    title = title_with_file_type[0].chomp
+    artist_name = data[0].chomp
+    binding.pry
 end
